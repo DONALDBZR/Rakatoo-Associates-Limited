@@ -1,0 +1,221 @@
+/* Assigning Source Code Pro */
+@font-face {
+    font-family: "Source Code Pro";
+    src: url("../Fonts/SourceCodePro-Black.otf");
+    src: url("../Fonts/SourceCodePro-BlackIt.otf");
+    src: url("../Fonts/SourceCodePro-Bold.otf");
+    src: url("../Fonts/SourceCodePro-BoldIt.otf");
+    src: url("../Fonts/SourceCodePro-ExtraLight.otf");
+    src: url("../Fonts/SourceCodePro-ExtraLightIt.otf");
+    src: url("../Fonts/SourceCodePro-It.otf");
+    src: url("../Fonts/SourceCodePro-Light.otf");
+    src: url("../Fonts/SourceCodePro-LightIt.otf");
+    src: url("../Fonts/SourceCodePro-Medium.otf");
+    src: url("../Fonts/SourceCodePro-MediumIt.otf");
+    src: url("../Fonts/SourceCodePro-Regular.otf");
+    src: url("../Fonts/SourceCodePro-Semibold.otf");
+    src: url("../Fonts/SourceCodePro-SemiboldIt.otf");
+}
+/* Assigning Josefin Slab */
+@font-face {
+    font-family: "Josefin Slab";
+    src: url("../Fonts/JosefinSlab-Bold.ttf");
+    src: url("../Fonts/JosefinSlab-BoldItalic.ttf");
+    src: url("../Fonts/JosefinSlab-Italic.ttf");
+    src: url("../Fonts/JosefinSlab-Light.ttf");
+    src: url("../Fonts/JosefinSlab-LightItalic.ttf");
+    src: url("../Fonts/JosefinSlab-Regular.ttf");
+    src: url("../Fonts/JosefinSlab-SemiBold.ttf");
+    src: url("../Fonts/JosefinSlab-SemiBoldItalic.ttf");
+    src: url("../Fonts/JosefinSlab-Thin.ttf");
+    src: url("../Fonts/JosefinSlab-ThinItalic.ttf");
+}
+/* Configurations */
+:root {
+    /* Declaration of variables */
+    --SourceCodePro: "Source Code Pro";
+    --JosefinSlab: "Josefin Slab";
+    --Color1: rgb(8, 128, 1);
+    --Color2: rgb(128, 128, 128);
+    --Color3: rgb(255, 255, 255);
+    --FontSize: 100%;
+    --Vertical: 100%;
+    --Horizontal: 100%;
+    --Width: 100%;
+    --Height: 100%;
+    --Color4: rgba(255, 255, 255, 0.35);
+    --Color5: rgba(255, 255, 255, 0.7);
+    /* HTML Styling configurations */
+    font-family: sans-serif;
+    font-size: var(--FontSize);
+    margin: calc(var(--Horizontal) * 0);
+    background-color: var(--Color2);
+}
+body {
+    margin: calc(var(--Horizontal) * 0);
+}
+/* Header */
+header {
+    width: var(--Horizontal);
+    display: flex;
+    background-color: var(--Color1);
+}
+.Header {
+    width: calc(var(--Horizontal) / 2);
+}
+.CompanyName {
+    text-align: center;
+    font-size: calc(var(--FontSize) * 2.59);
+    font-family: var(--JosefinSlab);
+    font-weight: 700;
+    margin: calc(var(--Horizontal) * 0);
+    color: var(--Color3);
+}
+nav {
+    width: var(--Horizontal);
+}
+ul {
+    width: var(--Horizontal);
+    display: flex;
+    padding: calc(var(--Horizontal) * 0);
+}
+li {
+    width: calc(var(--Horizontal) / 3);
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+}
+.NavigationLink {
+    text-decoration: none;
+    color: var(--Color3);
+    text-shadow: 1.6px 1.6px var(--Color1);
+    font-size: calc(var(--FontSize) * 1.46);
+    font-family: var(--SourceCodePro);
+    font-weight: 700;
+}
+.NavigationLink:hover {
+    color: var(--Color2);
+    text-shadow: none;
+}
+/* Content */
+.Content {
+    width: var(--Horizontal);
+}
+.Name {
+    font-size: calc(var(--FontSize) * 2);
+    font-weight: 700;
+    font-family: var(--JosefinSlab);
+    text-align: center;
+    color: var(--Color3);
+}
+.About {
+    font-size: var(--FontSize);
+    font-weight: 700;
+    font-family: var(--SourceCodePro);
+}
+/* Contact Details */
+.ContactDetails {
+    width: var(--Horizontal);
+    background-color: var(--Color1);
+    padding: calc(var(--Vertical) * 0.012) calc(var(--Horizontal) * 0);
+}
+.ContactUs {
+    font-size: calc(var(--FontSize) * 2) 200%;
+    text-align: center;
+    font-family: var(--SourceCodePro);
+    color: var(--Color3);
+}
+.ContactDetailsBar {
+    width: var(--Horizontal);
+    display: flex;
+}
+.Contact {
+    width: calc(var(--Horizontal) / 3);
+    display: flex;
+}
+h4 {
+    margin: calc(var(--Horizontal) * 0);
+    font-family: var(--SourceCodePro);
+    font-size: calc(var(--FontSize) * 1.18);
+    color: var(--Color3);
+}
+.ContactLink {
+    font-family: var(--SourceCodePro);
+    font-size: calc(var(--FontSize) * 1.18);
+    text-decoration: none;
+    color: var(--Color3);
+    text-shadow: 1.6px 1.6px var(--Color1);
+}
+.ContactLink:hover {
+    color: var(--Color2);
+    text-shadow: none;
+}
+/* Navigation Bar for Social Network Services */
+.SocialNetworkServicesBar {
+    width: calc(var(--Horizontal) / 2);
+    padding: calc(var(--Vertical) * 0.012) calc(var(--Horizontal) * 0.25);
+    display: flex;
+}
+.SocialNetworkService {
+    width: var(--Horizontal);
+    text-align: center;
+}
+.SocialNetworkServicesLogo {
+    width: calc(var(--Horizontal) * 0.075);
+    height: auto;
+}
+/* Footer */
+footer {
+    text-align: center;
+    font-size: var(--FontSize);
+    font-family: var(--SourceCodePro);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--Color3);
+}
+@media only screen and (max-width: 360px) {
+    header {
+        display: block;
+    }
+    .Header {
+        width: var(--Horizontal);
+    }
+    .CompanyName {
+        font-size: calc(var(--FontSize) * 2.1);
+    }
+    .ContactDetailsBar {
+        display: block;
+    }
+    .Contact {
+        width: var(--Horizontal);
+    }
+    .Name {
+        font-size: calc(var(--FontSize) * 1.8);
+    }
+    .About {
+        font-size: calc(var(--FontSize) * 0.9);
+    }
+    h4 {
+        font-size: calc(var(--FontSize) * 1.06);
+    }
+    .ContactLink {
+        font-size: calc(var(--FontSize) * 1.06);
+    }
+}
+@media only screen and (max-width: 640px) {
+    header {
+        display: block;
+    }
+    .Header {
+        width: var(--Horizontal);
+    }
+    .CompanyName {
+        font-size: calc(var(--FontSize) * 3.15);
+    }
+    .ContactDetailsBar {
+        display: block;
+    }
+    .Contact {
+        width: var(--Horizontal);
+    }
+}
