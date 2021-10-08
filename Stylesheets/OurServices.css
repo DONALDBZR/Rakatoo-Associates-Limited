@@ -122,6 +122,7 @@ nav {
 }
 .Services:hover {
     color: var(--Color3);
+    cursor: pointer;
 }
 /* Contact Details */
 .ContactDetails {
