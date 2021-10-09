@@ -60,10 +60,11 @@ header {
     display: flex;
     background-color: var(--Color1);
 }
-.Header {
+header #companyName,
+header nav {
     width: calc(var(--Horizontal) / 2);
 }
-.CompanyName {
+header #companyName h1 {
     text-align: center;
     font-size: calc(var(--FontSize) * 2.59);
     font-family: var(--JosefinSlab);
@@ -71,51 +72,45 @@ header {
     margin: calc(var(--Horizontal) * 0);
     color: var(--Color3);
 }
-nav {
-    width: var(--Horizontal);
-}
-ul {
+header nav {
     width: var(--Horizontal);
     display: flex;
     padding: calc(var(--Horizontal) * 0);
 }
-li {
+header nav div {
     width: calc(var(--Horizontal) / 3);
-    text-decoration: none;
-    text-align: center;
-    list-style-type: none;
 }
-.NavigationLink {
+header nav div a {
     text-decoration: none;
     color: var(--Color3);
     text-shadow: 1.6px 1.6px var(--Color1);
     font-size: calc(var(--FontSize) * 1.46);
     font-family: var(--SourceCodePro);
     font-weight: 700;
+    text-align: center;
 }
-.NavigationLink:hover {
+header nav div a:hover {
     color: var(--Color2);
     text-shadow: none;
 }
-/* Content */
-.Content {
+main {
     width: var(--Horizontal);
     padding-top: calc(var(--Vertical) * 0.05);
 }
 /* Slideshow container */
-.container {
+main .container {
     padding: calc(var(--Vertical) * 0) calc(var(--Horizontal) * 0.05);
     width: calc(var(--Horizontal) * 0.9);
     height: auto;
 }
-.cycle-slideshow {
+main .container .cycle-slideshow {
     margin-bottom: calc(var(--Vertical) * 0.03);
 }
-.slide {
+main .container .cycle-slideshow .slide {
     width: var(--Horizontal);
     position: relative;
 }
-.slide img {
+main .container .cycle-slideshow .slide img {
     display: block;
     height: auto;
     width: var(--Horizontal);
@@ -141,14 +136,14 @@ li {
 .cycle-slideshow:hover .cycle-next {
     opacity: 1;
 }
-.cycle-pager {
+main .container .cycle-slideshow .cycle-pager {
     position: absolute;
     bottom: calc(var(--Vertical) * 0.02);
     z-index: 1003;
     width: var(--Horizontal);
     text-align: center;
 }
-.cycle-pager span {
+main .container .cycle-slideshow .cycle-pager span {
     text-indent: -9999px;
     display: inline-block;
     width: 10px;
@@ -158,76 +153,74 @@ li {
     margin: calc(var(--Vertical) * 0) calc(var(--Horizontal) * 0.0045);
     cursor: pointer;
 }
-.cycle-pager .cycle-pager-active {
+main .container .cycle-slideshow .cycle-pager .cycle-pager-active {
     background: var(--Color5);
 }
 /* Welcome Text */
-.WelcomeText {
+main .container #welcomeText {
     text-align: center;
 }
-h3 {
+main .container #welcomeText h3 {
     font-size: calc(var(--FontSize) * 1.21);
     font-family: var(--JosefinSlab);
 }
-h2 {
+main .container #welcomeText h2 {
     font-size: calc(var(--FontSize) * 3.5);
     font-weight: 700;
     font-family: var(--JosefinSlab);
     color: var(--Color3);
 }
-/* Contact Details */
-.ContactDetails {
+footer #contactDetails {
     width: var(--Horizontal);
     background-color: var(--Color1);
     padding: calc(var(--Vertical) * 0.01) calc(var(--Horizontal) * 0);
 }
-.ContactUs {
+footer #contactDetails h1 {
     font-size: calc(var(--FontSize) * 2);
     text-align: center;
     font-family: var(--SourceCodePro);
     color: var(--Color3);
 }
-.ContactDetailsBar {
+footer #contactDetails #contactDetailsBar {
     width: var(--Horizontal);
     display: flex;
 }
-.Contact {
+footer #contactDetails #contactDetailsBar div {
     width: calc(var(--Horizontal) / 3);
     display: flex;
 }
-h4 {
+footer #contactDetails #contactDetailsBar div h4 {
     margin: 0;
     font-family: var(--SourceCodePro);
     font-size: calc(var(--FontSize) * 1.18);
     color: var(--Color3);
 }
-.ContactLink {
+footer #contactDetails #contactDetailsBar div a {
     font-family: var(--SourceCodePro);
     font-size: calc(var(--FontSize) * 1.18);
     text-decoration: none;
     color: var(--Color3);
     text-shadow: 1.6px 1.6px var(--Color1);
 }
-.ContactLink:hover {
+footer #contactDetails #contactDetailsBar div a:hover {
     color: var(--Color2);
     text-shadow: none;
 }
-/* Navigation Bar for Social Network Services */
-.SocialNetworkServicesBar {
+footer #socialNetworkServicesBar {
     width: calc(var(--Horizontal) * 0.5);
     padding: calc(var(--Vertical) * 0.012) calc(var(--Horizontal) * 0.25);
     display: flex;
 }
-.SocialNetworkService {
+footer #socialNetworkServicesBar a {
     width: var(--Horizontal);
     text-align: center;
 }
-.SocialNetworkServicesLogo {
+footer #socialNetworkServicesBar a img {
     width: calc(var(--Horizontal) * 0.075);
     height: auto;
 }
 /* Footer */
-footer {
+footer #copyright {
     text-align: center;
     font-size: var(--FontSize);
     font-family: var(--SourceCodePro);
