@@ -79,6 +79,7 @@ header nav {
 }
 header nav div {
     width: calc(var(--Horizontal) / 3);
+    text-align: center;
 }
 header nav div a {
     text-decoration: none;
@@ -87,7 +88,6 @@ header nav div a {
     font-size: calc(var(--FontSize) * 1.46);
     font-family: var(--SourceCodePro);
     font-weight: 700;
-    text-align: center;
 }
 header nav div a:hover {
     color: var(--Color2);
