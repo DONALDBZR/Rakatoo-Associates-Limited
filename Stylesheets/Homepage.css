@@ -232,25 +232,28 @@ footer #copyright {
     header {
         display: block;
     }
-    .Header {
+    header #companyName {
         width: var(--Horizontal);
     }
-    .CompanyName {
+    header #companyName h1 {
         font-size: calc(var(--FontSize) * 2.1);
     }
-    h2 {
-        font-size: calc(var(--FontSize) * 1.75);
+    header nav div a {
+        font-size: calc(var(--FontSize) * 0.957906);
     }
-    .ContactDetailsBar {
+    main .container #welcomeText h2 {
+        font-size: calc(var(--FontSize) * 2.066715);
+    }
+    footer #contactDetails #contactDetailsBar {
         display: block;
     }
-    .Contact {
+    footer #contactDetails #contactDetailsBar div {
         width: var(--Horizontal);
     }
-    h4 {
+    footer #contactDetails #contactDetailsBar h4 {
         font-size: calc(var(--FontSize) * 1.06);
     }
-    .ContactLink {
+    footer #contactDetails #contactDetailsBar a {
         font-size: calc(var(--FontSize) * 1.06);
     }
 }
@@ -258,16 +261,13 @@ footer #copyright {
     header {
         display: block;
     }
-    .Header {
+    header #companyName {
         width: var(--Horizontal);
     }
-    .CompanyName {
-        font-size: calc(var(--FontSize) * 3.15);
-    }
-    .ContactDetailsBar {
+    footer #contactDetails #contactDetailsBar {
         display: block;
     }
-    .Contact {
+    footer #contactDetails #contactDetailsBar div {
         width: var(--Horizontal);
     }
 }
