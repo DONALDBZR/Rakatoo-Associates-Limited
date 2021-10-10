@@ -171,28 +171,32 @@ footer #copyright {
     header {
         display: block;
     }
-    .Header {
+    header #companyName,
+    header nav {
         width: var(--Horizontal);
     }
-    .CompanyName {
+    header #companyName h1 {
         font-size: calc(var(--FontSize) * 2.1);
     }
-    .ContactDetailsBar {
-        display: block;
+    header nav div a {
+        font-size: calc(var(--FontSize) * 0.957906);
     }
-    .Contact {
-        width: var(--Horizontal);
-    }
-    .Name {
+    main #companyProfile h1 {
         font-size: calc(var(--FontSize) * 1.8);
     }
-    .About {
+    main #companyProfile p {
         font-size: calc(var(--FontSize) * 0.9);
     }
-    h4 {
+    footer #contactDetails #contactDetailsBar {
+        display: block;
+    }
+    footer #contactDetails #contactDetailsBar div {
+        width: var(--Horizontal);
+    }
+    footer #contactDetails #contactDetailsBar div h4 {
         font-size: calc(var(--FontSize) * 1.06);
     }
-    .ContactLink {
+    footer #contactDetails #contactDetailsBar div a {
         font-size: calc(var(--FontSize) * 1.06);
     }
 }
