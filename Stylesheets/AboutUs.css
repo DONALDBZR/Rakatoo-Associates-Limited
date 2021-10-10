@@ -204,16 +204,17 @@ footer #copyright {
     header {
         display: block;
     }
-    .Header {
+    header #companyName,
+    header nav {
         width: var(--Horizontal);
     }
-    .CompanyName {
+    header #companyName h1 {
         font-size: calc(var(--FontSize) * 3.15);
     }
-    .ContactDetailsBar {
+    footer #contactDetails #contactDetailsBar {
         display: block;
     }
-    .Contact {
+    footer #contactDetails #contactDetailsBar div {
         width: var(--Horizontal);
     }
 }
