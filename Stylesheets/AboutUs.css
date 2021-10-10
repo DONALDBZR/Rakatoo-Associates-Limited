@@ -60,10 +60,11 @@ header {
     display: flex;
     background-color: var(--Color1);
 }
-.Header {
+header #companyName,
+header nav {
     width: calc(var(--Horizontal) / 2);
 }
-.CompanyName {
+header #companyName h1 {
     text-align: center;
     font-size: calc(var(--FontSize) * 2.59);
     font-family: var(--JosefinSlab);
@@ -71,21 +72,15 @@ header {
     margin: calc(var(--Horizontal) * 0);
     color: var(--Color3);
 }
-nav {
-    width: var(--Horizontal);
-}
-ul {
-    width: var(--Horizontal);
+header nav {
     display: flex;
-    padding: calc(var(--Horizontal) * 0);
 }
-li {
+header nav div {
     width: calc(var(--Horizontal) / 3);
     text-decoration: none;
     text-align: center;
-    list-style-type: none;
 }
-.NavigationLink {
+header nav div a {
     text-decoration: none;
     color: var(--Color3);
     text-shadow: 1.6px 1.6px var(--Color1);
@@ -93,79 +88,78 @@ li {
     font-family: var(--SourceCodePro);
     font-weight: 700;
 }
-.NavigationLink:hover {
+header nav div a:hover {
     color: var(--Color2);
     text-shadow: none;
 }
-/* Content */
-.Content {
+main {
     width: var(--Horizontal);
 }
-.Name {
+main #companyProfile h1 {
     font-size: calc(var(--FontSize) * 2);
     font-weight: 700;
     font-family: var(--JosefinSlab);
     text-align: center;
     color: var(--Color3);
 }
-.About {
+main #companyProfile p {
     font-size: var(--FontSize);
     font-weight: 700;
     font-family: var(--SourceCodePro);
 }
-/* Contact Details */
-.ContactDetails {
+footer {
+    margin-top: calc(var(--Vertical) * 0.08);
+}
+footer #contactDetails {
     width: var(--Horizontal);
     background-color: var(--Color1);
     padding: calc(var(--Vertical) * 0.012) calc(var(--Horizontal) * 0);
 }
-.ContactUs {
+footer #contactDetails h1 {
     font-size: calc(var(--FontSize) * 2) 200%;
     text-align: center;
     font-family: var(--SourceCodePro);
     color: var(--Color3);
 }
-.ContactDetailsBar {
+footer #contactDetails #contactDetailsBar {
     width: var(--Horizontal);
     display: flex;
 }
-.Contact {
+footer #contactDetails #contactDetailsBar div {
     width: calc(var(--Horizontal) / 3);
     display: flex;
 }
-h4 {
+footer #contactDetails #contactDetailsBar div h4 {
     margin: calc(var(--Horizontal) * 0);
     font-family: var(--SourceCodePro);
     font-size: calc(var(--FontSize) * 1.18);
     color: var(--Color3);
 }
-.ContactLink {
+footer #contactDetails #contactDetailsBar div a {
     font-family: var(--SourceCodePro);
     font-size: calc(var(--FontSize) * 1.18);
     text-decoration: none;
     color: var(--Color3);
     text-shadow: 1.6px 1.6px var(--Color1);
 }
-.ContactLink:hover {
+footer #contactDetails #contactDetailsBar div a:hover {
     color: var(--Color2);
     text-shadow: none;
 }
-/* Navigation Bar for Social Network Services */
-.SocialNetworkServicesBar {
+footer #socialNetworkServicesBar {
     width: calc(var(--Horizontal) / 2);
     padding: calc(var(--Vertical) * 0.012) calc(var(--Horizontal) * 0.25);
     display: flex;
 }
-.SocialNetworkService {
+footer #socialNetworkServicesBar a {
     width: var(--Horizontal);
     text-align: center;
 }
-.SocialNetworkServicesLogo {
+footer #socialNetworkServicesBar a img {
     width: calc(var(--Horizontal) * 0.075);
     height: auto;
 }
-/* Footer */
-footer {
+footer #copyright {
     text-align: center;
     font-size: var(--FontSize);
     font-family: var(--SourceCodePro);
