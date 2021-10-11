@@ -195,6 +195,9 @@ footer #copyright {
     main h1 {
         font-size: calc(var(--FontSize) * 1.62);
     }
+    footer {
+        margin-top: calc(var(--Vertical) * 0);
+    }
     footer #contactDetails #contactDetailsBar {
         display: block;
     }
@@ -212,16 +215,17 @@ footer #copyright {
     header {
         display: block;
     }
-    .Header {
+    header #companyName,
+    header nav {
         width: var(--Horizontal);
     }
-    .Services {
-        margin: calc(var(--Vertical) * 0) calc(var(--Horizontal) * 0.1968);
+    footer {
+        margin-top: calc(var(--Vertical) * 0);
     }
-    .ContactDetailsBar {
+    footer #contactDetails #contactDetailsBar {
         display: block;
     }
-    .Contact {
+    footer #contactDetails #contactDetailsBar #contact {
         width: var(--Horizontal);
     }
 }
