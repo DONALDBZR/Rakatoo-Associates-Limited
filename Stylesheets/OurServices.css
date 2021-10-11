@@ -118,6 +118,9 @@ main div h1:hover {
     color: var(--Color3);
     cursor: pointer;
 }
+footer {
+    margin-top: calc(var(--Vertical) * 0.13);
+}
 footer #contactDetails {
     width: var(--Horizontal);
     background-color: var(--Color1);
@@ -154,16 +157,16 @@ footer #contactDetails #contactDetailsBar #contact a:hover {
     color: var(--Color2);
     text-shadow: none;
 }
-footer #socialNetworkServiceBar {
+footer #socialNetworkServicesBar {
     width: calc(var(--Horizontal) / 2);
     padding: calc(var(--Vertical) * 0.012) calc(var(--Horizontal) * 0.25);
     display: flex;
 }
-footer #socialNetworkServiceBar a {
+footer #socialNetworkServicesBar a {
     width: var(--Horizontal);
     text-align: center;
 }
-footer #socialNetworkServiceBar a img {
+footer #socialNetworkServicesBar a img {
     width: calc(var(--Horizontal) * 0.075);
     height: auto;
 }
