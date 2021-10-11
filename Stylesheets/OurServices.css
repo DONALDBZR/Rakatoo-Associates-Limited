@@ -182,33 +182,30 @@ footer #copyright {
     header {
         display: block;
     }
-    .Header {
+    header #companyName,
+    header nav {
         width: var(--Horizontal);
     }
-    .OurServices {
+    header #companyName h1 {
+        font-size: calc(var(--FontSize) * 2.331);
+    }
+    header nav div a {
+        font-size: calc(var(--FontSize) * 0.957906);
+    }
+    main h1 {
         font-size: calc(var(--FontSize) * 1.62);
     }
-    .Services {
-        font-size: calc(var(--FontSize) * 0.81);
-        margin: calc(var(--Vertical) * 0) calc(var(--Horizontal) * 0.0763);
-    }
-    .ContactDetailsBar {
+    footer #contactDetails #contactDetailsBar {
         display: block;
     }
-    .Contact {
+    footer #contactDetails #contactDetailsBar #contact {
         width: var(--Horizontal);
     }
-    .Name {
-        font-size: calc(var(--FontSize) * 1.8);
-    }
-    .About {
+    footer #contactDetails #contactDetailsBar #contact h4 {
         font-size: calc(var(--FontSize) * 0.9);
     }
-    h4 {
-        font-size: calc(var(--FontSize) * 1.06);
-    }
-    .ContactLink {
-        font-size: calc(var(--FontSize) * 1.06);
+    footer #contactDetails #contactDetailsBar #contact a {
+        font-size: calc(var(--FontSize) * 0.9);
     }
 }
 @media only screen and (max-width: 640px) {
