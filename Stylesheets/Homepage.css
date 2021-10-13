@@ -171,7 +171,6 @@ footer #socialNetworkServicesBar a img {
     width: calc(var(--horizontal) * 0.075);
     height: auto;
 }
-/* Footer */
 footer #copyright {
     text-align: center;
     font-size: var(--fontSize);
@@ -209,6 +208,16 @@ footer #copyright {
     main #animation img {
         width: var(--horizontal);
         height: auto;
+    }
+    footer #contactDetails #contactDetailsBar {
+        display: block;
+    }
+    footer #contactDetails #contactDetailsBar div {
+        width: var(--horizontal);
+    }
+    footer #contactDetails #contactDetailsBar div h4,
+    footer #contactDetails #contactDetailsBar div a {
+        font-size: calc(var(--fontSize) * 0.9558);
     }
 }
 @media only screen and (max-width: 640px) {
