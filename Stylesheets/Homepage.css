@@ -101,7 +101,6 @@ header nav div a:hover {
 main {
     width: var(--horizontal);
 }
-/* Welcome Text */
 main #welcomeText {
     text-align: center;
 }
@@ -115,7 +114,7 @@ main #welcomeText h1 {
     font-family: var(--josefinSlab);
     color: var(--color3);
 }
-main #animation {
+main #animation img {
     width: var(--horizontal);
     height: auto;
     text-align: center;
@@ -200,6 +199,16 @@ footer #copyright {
     }
     header nav div a {
         font-size: calc(var(--fontSize) * 0.957906);
+    }
+    main #welcomeText h2 {
+        font-size: calc(var(--fontSize) * 1.148175);
+    }
+    main #welcomeText h1 {
+        font-size: calc(var(--fontSize) * 2.29635);
+    }
+    main #animation img {
+        width: var(--horizontal);
+        height: auto;
     }
 }
 @media only screen and (max-width: 640px) {
