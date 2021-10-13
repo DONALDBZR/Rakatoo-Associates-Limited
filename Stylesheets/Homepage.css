@@ -56,7 +56,6 @@
 body {
     margin: calc(var(--horizontal) * 0);
 }
-/* Header */
 header {
     width: var(--horizontal);
     display: flex;
@@ -183,6 +182,25 @@ footer #copyright {
     color: var(--color3);
 }
 @media only screen and (max-width: 360px) {
+    header {
+        width: var(--horizontal);
+    }
+    header #companyLogo {
+        width: calc(var(--horizontal) / 3);
+    }
+    header #companyLogo img {
+        opacity: var(--opacity);
+    }
+    header nav {
+        width: calc(var(--horizontal) * (2 / 3));
+    }
+    header nav div {
+        width: calc(var(--horizontal) / 2);
+        text-align: center;
+    }
+    header nav div a {
+        font-size: calc(var(--fontSize) * 0.957906);
+    }
 }
 @media only screen and (max-width: 640px) {
 }
