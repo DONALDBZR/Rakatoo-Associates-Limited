@@ -221,4 +221,10 @@ footer #copyright {
     }
 }
 @media only screen and (max-width: 640px) {
+    footer #contactDetails #contactDetailsBar {
+        display: block;
+    }
+    footer #contactDetails #contactDetailsBar div {
+        width: var(--horizontal);
+    }
 }
