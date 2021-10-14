@@ -2,19 +2,21 @@
 class Header extends React.Component {
     // Render method
     render() {
+        // Variables
+        let domain = "http://stormysystem.ddns.net/Rakatoo Associates Limited";
         return (
             <header>
                 <div id="companyLogo">
-                    <a href="../">
-                        <img src="../Images/Logo.png" />
+                    <a href={domain}>
+                        <img src="http://stormysystem.ddns.net/Rakatoo Associates Limited/Images/Logo.png" />
                     </a>
                 </div>
                 <nav>
                     <div>
-                        <a href="./"> About Us </a>
+                        <a href="../"> About Us </a>
                     </div>
                     <div>
-                        <a href="../OurServices"> Our Services </a>
+                        <a href={domain + "/OurServices"}>Our Services</a>
                     </div>
                 </nav>
             </header>
