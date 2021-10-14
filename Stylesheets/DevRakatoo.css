@@ -98,6 +98,56 @@ header nav div:hover {
 header nav div a:hover {
     color: var(--color2);
 }
+main {
+    width: var(--horizontal);
+}
+main h1 {
+    font-family: var(--josefinSlab);
+    font-size: calc(var(--fontSize) * 2);
+    font-weight: bold;
+    text-align: center;
+    color: var(--color3);
+}
+main #data {
+    width: var(--horizontal);
+    display: flex;
+}
+main #data #profilePicture,
+main #data #memberData {
+    width: calc(var(--horizontal) / 2);
+}
+main #data #profilePicture img {
+    width: calc(var(--horizontal) / 3);
+    margin: calc(var(--vertical) * 0) calc(var(--horizontal) / 3);
+    height: auto;
+}
+main #data #memberData #name,
+main #data #memberData #role,
+main #data #memberData #description {
+    width: var(--horizontal);
+    display: flex;
+}
+
+main #data #memberData #name h1,
+main #data #memberData #role h1,
+main #data #memberData #description h1 {
+    font-size: calc(var(--fontSize) * 1.8);
+    color: var(--color3);
+    font-weight: bold;
+    text-align: left;
+}
+main #data #memberData #name #label,
+main #data #memberData #role #label,
+main #data #memberData #description #label {
+    font-family: var(--sourceCodePro);
+    width: calc(var(--horizontal) * 0.31);
+}
+main #data #memberData #name #person,
+main #data #memberData #role #person,
+main #data #memberData #description #person {
+    font-family: var(--josefinSlab);
+    width: calc(var(--horizontal) * 0.69);
+}
 footer #contactDetails {
     width: var(--horizontal);
     background-color: var(--color6);

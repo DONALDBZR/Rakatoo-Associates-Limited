@@ -27,21 +27,41 @@ class Header extends React.Component {
 class Main extends React.Component {
     // Render method
     render() {
+        // Variables
+        let domain = "http://stormysystem.ddns.net/Rakatoo Associates Limited/";
         return (
             <main>
-                <div id="companyProfile">
-                    <h1>Rakatoo Associates Limited</h1>
-                    <img src="../Images/Logo.png" alt="Company Image" />
-                    <div>
-                        Rakatoo Associates Limited was founded to cater for the
-                        increasing needs for small and medium companies by
-                        providing technical advice and assistance.
+                <h1>Dev Rakatoo</h1>
+                <div id="data">
+                    <div id="profilePicture">
+                        <img
+                            src={domain + "/Images/Logo.png"}
+                            alt="Profile Picture"
+                        />
                     </div>
-                </div>
-                <div id="members">
-                    <div id="rakatoo">
-                        <img src="../Images/Logo.png" alt="Member Image" />
-                        <a href="./Dev Rakatoo">Dev Rakatoo</a>
+                    <div id="memberData">
+                        <div id="name">
+                            <h1 id="label">Name:</h1>
+                            <h1 id="person">Dev Rakatoo</h1>
+                        </div>
+                        <div id="role">
+                            <h1 id="label">Role:</h1>
+                            <h1 id="person">Role</h1>
+                        </div>
+                        <div id="description">
+                            <h1 id="label">Description:</h1>
+                            <h1 id="person">
+                                Dev Rakatoo formed his own practice after
+                                working as accountant, financial controller and
+                                business consultant in many big companies given
+                                that he specializes in accounting and business
+                                outsourcing. He has helped many SMES with their
+                                administration and with a better optimization of
+                                their resources to eventually open doors to many
+                                opportunities. His long years of experience
+                                makes him the right coach for your business.
+                            </h1>
+                        </div>
                     </div>
                 </div>
             </main>
