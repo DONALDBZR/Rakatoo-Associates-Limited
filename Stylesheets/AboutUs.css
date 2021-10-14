@@ -98,9 +98,6 @@ header nav div:hover {
 header nav div a:hover {
     color: var(--color2);
 }
-footer {
-    margin-top: calc(var(--vertical) * 0.04);
-}
 footer #contactDetails {
     width: var(--horizontal);
     background-color: var(--color6);
