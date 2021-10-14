@@ -148,6 +148,9 @@ main #services #consulting h1:hover + div,
 main #services #businessDiagnosis h1:hover + div {
     display: block;
 }
+footer {
+    margin-top: calc(var(--vertical) * 0.04);
+}
 footer #contactDetails {
     width: var(--horizontal);
     background-color: var(--color6);
