@@ -23,11 +23,84 @@ class Header extends React.Component {
 }
 // Main class
 class Main extends React.Component {
-    // Display method
-    display() {}
     // Render method
     render() {
-        return <main></main>;
+        return (
+            <main>
+                <h1>Services offered by the company</h1>
+                <div id="services">
+                    <div id="accounting">
+                        <h1>Accounting</h1>
+                        <div>
+                            We record financial transactions pertaining to your
+                            business as it includes summarizing, analyzing, and
+                            reporting these transactions to oversight agencies,
+                            regulators and tax collection entities.
+                        </div>
+                    </div>
+                    <div id="payrollManagement">
+                        <h1>Payroll Management</h1>
+                        <div>
+                            We provide payroll management where we do the
+                            process of administration of your company's
+                            employee's financial records where we include
+                            details of the employee's salaries, incentives,
+                            bonuses, deductions and net pay.
+                        </div>
+                    </div>
+                    <div id="taxation">
+                        <h1>Taxation</h1>
+                        <div>
+                            We process your taxation by declaring the resulting
+                            revenue.
+                        </div>
+                    </div>
+                    <div id="feasibilityStudies">
+                        <h1>Feasibility Studies</h1>
+                        <div>
+                            We analyzes all of your project's relevant factors
+                            including economic, technical, legal, and scheduling
+                            considerations to ascertain the likelihood of
+                            completing your project successfully.
+                        </div>
+                    </div>
+                    <div id="businessPlanning">
+                        <h1>Business Planning</h1>
+                        <div>
+                            We write the document that describes your business
+                            idea and all the relevant internal along with
+                            external elements involved in launching your new
+                            project by describing its nature and context of your
+                            business opportunities as well as the plans to
+                            exploit the opportunity.
+                        </div>
+                    </div>
+                    <div id="advisory">
+                        <h1>Advisory</h1>
+                        <div>
+                            We provide financial expertise and insights that
+                            steer you toward long-term growth and profitability.
+                        </div>
+                    </div>
+                    <div id="consulting">
+                        <h1>Consulting</h1>
+                        <div>
+                            We provide you with services that help you to
+                            analyze financial information so that you can make
+                            important business decisions.
+                        </div>
+                    </div>
+                    <div id="businessDiagnosis">
+                        <h1>Business Diagnosis</h1>
+                        <div>
+                            We identify reasons for unsatisfactory performance
+                            by making the appropriate links between causes and
+                            effects.
+                        </div>
+                    </div>
+                </div>
+            </main>
+        );
     }
 }
 // Footer class
