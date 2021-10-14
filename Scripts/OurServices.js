@@ -5,16 +5,16 @@ class Header extends React.Component {
         return (
             <header>
                 <div id="companyLogo">
-                    <a href="./">
-                        <img src="./Images/Logo.png" />
+                    <a href="../">
+                        <img src="../Images/Logo.png" />
                     </a>
                 </div>
                 <nav>
                     <div>
-                        <a href="./AboutUs/"> About Us </a>
+                        <a href="./"> About Us </a>
                     </div>
                     <div>
-                        <a href="./OurServices/"> Our Services </a>
+                        <a href="../OurServices/"> Our Services </a>
                     </div>
                 </nav>
             </header>
@@ -25,9 +25,7 @@ class Header extends React.Component {
 class Main extends React.Component {
     // Render method
     render() {
-        return (
-            <main></main>
-        );
+        return <main></main>;
     }
 }
 // Footer class
