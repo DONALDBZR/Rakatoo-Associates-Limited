@@ -1,0 +1,164 @@
+/* Assigning Source Code Pro */
+@font-face {
+    font-family: "Source Code Pro";
+    src: url("../Fonts/SourceCodePro-Black.otf");
+    src: url("../Fonts/SourceCodePro-BlackIt.otf");
+    src: url("../Fonts/SourceCodePro-Bold.otf");
+    src: url("../Fonts/SourceCodePro-BoldIt.otf");
+    src: url("../Fonts/SourceCodePro-ExtraLight.otf");
+    src: url("../Fonts/SourceCodePro-ExtraLightIt.otf");
+    src: url("../Fonts/SourceCodePro-It.otf");
+    src: url("../Fonts/SourceCodePro-Light.otf");
+    src: url("../Fonts/SourceCodePro-LightIt.otf");
+    src: url("../Fonts/SourceCodePro-Medium.otf");
+    src: url("../Fonts/SourceCodePro-MediumIt.otf");
+    src: url("../Fonts/SourceCodePro-Regular.otf");
+    src: url("../Fonts/SourceCodePro-Semibold.otf");
+    src: url("../Fonts/SourceCodePro-SemiboldIt.otf");
+}
+/* Assigning Josefin Slab */
+@font-face {
+    font-family: "Josefin Slab";
+    src: url("../Fonts/JosefinSlab-Bold.ttf");
+    src: url("../Fonts/JosefinSlab-BoldItalic.ttf");
+    src: url("../Fonts/JosefinSlab-Italic.ttf");
+    src: url("../Fonts/JosefinSlab-Light.ttf");
+    src: url("../Fonts/JosefinSlab-LightItalic.ttf");
+    src: url("../Fonts/JosefinSlab-Regular.ttf");
+    src: url("../Fonts/JosefinSlab-SemiBold.ttf");
+    src: url("../Fonts/JosefinSlab-SemiBoldItalic.ttf");
+    src: url("../Fonts/JosefinSlab-Thin.ttf");
+    src: url("../Fonts/JosefinSlab-ThinItalic.ttf");
+}
+/* Configurations */
+:root {
+    /* Declaration of variables */
+    --sourceCodePro: "Source Code Pro";
+    --josefinSlab: "Josefin Slab";
+    --color1: rgb(8, 128, 1);
+    --color2: rgb(128, 128, 128);
+    --color3: rgb(255, 255, 255);
+    --color6: rgb(115, 115, 115);
+    --fontSize: 100%;
+    --vertical: 100%;
+    --horizontal: 100%;
+    --opacity: 100%;
+    --width: 1366px;
+    --height: 768px;
+    --color4: rgba(255, 255, 255, 0.35);
+    --color5: rgba(255, 255, 255, 0.7);
+    /* HTML Styling configurations */
+    font-family: sans-serif;
+    font-size: var(--fontSize);
+    margin: calc(var(--horizontal) * 0);
+    background-color: var(--color2);
+}
+body {
+    margin: calc(var(--horizontal) * 0);
+}
+header {
+    width: var(--horizontal);
+    display: flex;
+    background-color: var(--color6);
+}
+header #companyLogo,
+header nav {
+    width: calc(var(--horizontal) / 2);
+}
+header #companyLogo {
+    text-align: center;
+}
+header #companyLogo img {
+    height: calc(var(--height) * 0.03645);
+    width: auto;
+    opacity: calc(var(--opacity) * 0.5);
+}
+header #companyLogo img:hover {
+    opacity: var(--opacity);
+}
+header nav {
+    width: var(--horizontal);
+    display: flex;
+    padding: calc(var(--horizontal) * 0);
+}
+header nav div {
+    width: calc(var(--horizontal) / 2);
+    text-align: center;
+}
+header nav div a {
+    text-decoration: none;
+    color: var(--color3);
+    font-size: calc(var(--fontSize) * 1.46);
+    font-family: var(--sourceCodePro);
+    font-weight: bold;
+}
+header nav div:hover {
+    background-color: var(--color1);
+}
+header nav div a:hover {
+    color: var(--color2);
+}
+footer #contactDetails {
+    width: var(--horizontal);
+    background-color: var(--color6);
+}
+footer #contactDetails h1 {
+    font-size: calc(var(--fontSize) * 2);
+    text-align: center;
+    font-family: var(--sourceCodePro);
+    color: var(--color3);
+    margin: calc(var(--vertical) * 0);
+}
+footer #contactDetails #contactDetailsBar {
+    width: var(--horizontal);
+    display: flex;
+}
+footer #contactDetails #contactDetailsBar div {
+    width: calc(var(--horizontal) / 3);
+    display: flex;
+    padding: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0.01);
+}
+footer #contactDetails #contactDetailsBar div h4 {
+    margin: 0;
+    font-family: var(--sourceCodePro);
+    font-size: calc(var(--fontSize) * 1.18);
+    color: var(--color3);
+}
+footer #contactDetails #contactDetailsBar div a {
+    font-family: var(--sourceCodePro);
+    font-size: calc(var(--fontSize) * 1.18);
+    text-decoration: none;
+    color: var(--color3);
+}
+footer #contactDetails #contactDetailsBar div a:hover {
+    color: var(--color2);
+    text-shadow: none;
+}
+footer #contactDetails #contactDetailsBar div:hover {
+    background-color: var(--color1);
+}
+footer #socialNetworkServicesBar {
+    width: calc(var(--horizontal) * 0.5);
+    padding: calc(var(--vertical) * 0.012) calc(var(--horizontal) * 0.25);
+    display: flex;
+}
+footer #socialNetworkServicesBar a {
+    width: var(--horizontal);
+    text-align: center;
+}
+footer #socialNetworkServicesBar a img {
+    width: calc(var(--horizontal) * 0.075);
+    height: auto;
+}
+footer #copyright {
+    text-align: center;
+    font-size: var(--fontSize);
+    font-family: var(--sourceCodePro);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color3);
+}
+@media only screen and (max-width: 360px) {
+}
+@media only screen and (max-width: 640px) {
+}
