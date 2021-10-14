@@ -220,6 +220,16 @@ footer #copyright {
     main #members #rakatoo a {
         font-size: calc(var(--fontSize) * 1.3122);
     }
+    footer #contactDetails #contactDetailsBar {
+        display: block;
+    }
+    footer #contactDetails #contactDetailsBar div {
+        width: var(--horizontal);
+    }
+    footer #contactDetails #contactDetailsBar div h4,
+    footer #contactDetails #contactDetailsBar div a {
+        font-size: calc(var(--fontSize) * 0.9558);
+    }
 }
 @media only screen and (max-width: 640px) {
 }
