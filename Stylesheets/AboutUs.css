@@ -33,188 +33,135 @@
 /* Configurations */
 :root {
     /* Declaration of variables */
-    --SourceCodePro: "Source Code Pro";
-    --JosefinSlab: "Josefin Slab";
-    --Color1: rgb(8, 128, 1);
-    --Color2: rgb(128, 128, 128);
-    --Color3: rgb(255, 255, 255);
-    --FontSize: 100%;
-    --Vertical: 100%;
-    --Horizontal: 100%;
-    --Width: 100%;
-    --Height: 100%;
-    --Color4: rgba(255, 255, 255, 0.35);
-    --Color5: rgba(255, 255, 255, 0.7);
+    --sourceCodePro: "Source Code Pro";
+    --josefinSlab: "Josefin Slab";
+    --color1: rgb(8, 128, 1);
+    --color2: rgb(128, 128, 128);
+    --color3: rgb(255, 255, 255);
+    --color6: rgb(115, 115, 115);
+    --fontSize: 100%;
+    --vertical: 100%;
+    --horizontal: 100%;
+    --opacity: 100%;
+    --width: 1366px;
+    --height: 768px;
+    --color4: rgba(255, 255, 255, 0.35);
+    --color5: rgba(255, 255, 255, 0.7);
     /* HTML Styling configurations */
     font-family: sans-serif;
-    font-size: var(--FontSize);
-    margin: calc(var(--Horizontal) * 0);
-    background-color: var(--Color2);
+    font-size: var(--fontSize);
+    margin: calc(var(--horizontal) * 0);
+    background-color: var(--color2);
 }
 body {
-    margin: calc(var(--Horizontal) * 0);
+    margin: calc(var(--horizontal) * 0);
 }
-/* Header */
 header {
-    width: var(--Horizontal);
+    width: var(--horizontal);
     display: flex;
-    background-color: var(--Color1);
+    background-color: var(--color6);
 }
-header #companyName,
+header #companyLogo,
 header nav {
-    width: calc(var(--Horizontal) / 2);
+    width: calc(var(--horizontal) / 2);
 }
-header #companyName h1 {
+header #companyLogo {
     text-align: center;
-    font-size: calc(var(--FontSize) * 2.59);
-    font-family: var(--JosefinSlab);
-    font-weight: 700;
-    margin: calc(var(--Horizontal) * 0);
-    color: var(--Color3);
+}
+header #companyLogo img {
+    height: calc(var(--height) * 0.03645);
+    width: auto;
+    opacity: calc(var(--opacity) * 0.5);
+}
+header #companyLogo img:hover {
+    opacity: var(--opacity);
 }
 header nav {
+    width: var(--horizontal);
     display: flex;
+    padding: calc(var(--horizontal) * 0);
 }
 header nav div {
-    width: calc(var(--Horizontal) / 3);
-    text-decoration: none;
+    width: calc(var(--horizontal) / 2);
     text-align: center;
 }
 header nav div a {
     text-decoration: none;
-    color: var(--Color3);
-    text-shadow: 1.6px 1.6px var(--Color1);
-    font-size: calc(var(--FontSize) * 1.46);
-    font-family: var(--SourceCodePro);
-    font-weight: 700;
+    color: var(--color3);
+    font-size: calc(var(--fontSize) * 1.46);
+    font-family: var(--sourceCodePro);
+    font-weight: bold;
+}
+header nav div:hover {
+    background-color: var(--color1);
 }
 header nav div a:hover {
-    color: var(--Color2);
-    text-shadow: none;
-}
-main {
-    width: var(--Horizontal);
-}
-main #companyProfile h1 {
-    font-size: calc(var(--FontSize) * 2);
-    font-weight: 700;
-    font-family: var(--JosefinSlab);
-    text-align: center;
-    color: var(--Color3);
-}
-main #companyProfile p {
-    font-size: var(--FontSize);
-    font-weight: 700;
-    font-family: var(--SourceCodePro);
+    color: var(--color2);
 }
 footer {
-    margin-top: calc(var(--Vertical) * 0.08);
+    margin-top: calc(var(--vertical) * 0.04);
 }
 footer #contactDetails {
-    width: var(--Horizontal);
-    background-color: var(--Color1);
-    padding: calc(var(--Vertical) * 0.012) calc(var(--Horizontal) * 0);
+    width: var(--horizontal);
+    background-color: var(--color6);
 }
 footer #contactDetails h1 {
-    font-size: calc(var(--FontSize) * 2) 200%;
+    font-size: calc(var(--fontSize) * 2);
     text-align: center;
-    font-family: var(--SourceCodePro);
-    color: var(--Color3);
+    font-family: var(--sourceCodePro);
+    color: var(--color3);
+    margin: calc(var(--vertical) * 0);
 }
 footer #contactDetails #contactDetailsBar {
-    width: var(--Horizontal);
+    width: var(--horizontal);
     display: flex;
 }
 footer #contactDetails #contactDetailsBar div {
-    width: calc(var(--Horizontal) / 3);
+    width: calc(var(--horizontal) / 3);
     display: flex;
+    padding: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0.01);
 }
 footer #contactDetails #contactDetailsBar div h4 {
-    margin: calc(var(--Horizontal) * 0);
-    font-family: var(--SourceCodePro);
-    font-size: calc(var(--FontSize) * 1.18);
-    color: var(--Color3);
+    margin: 0;
+    font-family: var(--sourceCodePro);
+    font-size: calc(var(--fontSize) * 1.18);
+    color: var(--color3);
 }
 footer #contactDetails #contactDetailsBar div a {
-    font-family: var(--SourceCodePro);
-    font-size: calc(var(--FontSize) * 1.18);
+    font-family: var(--sourceCodePro);
+    font-size: calc(var(--fontSize) * 1.18);
     text-decoration: none;
-    color: var(--Color3);
-    text-shadow: 1.6px 1.6px var(--Color1);
+    color: var(--color3);
 }
 footer #contactDetails #contactDetailsBar div a:hover {
-    color: var(--Color2);
+    color: var(--color2);
     text-shadow: none;
 }
+footer #contactDetails #contactDetailsBar div:hover {
+    background-color: var(--color1);
+}
 footer #socialNetworkServicesBar {
-    width: calc(var(--Horizontal) / 2);
-    padding: calc(var(--Vertical) * 0.012) calc(var(--Horizontal) * 0.25);
+    width: calc(var(--horizontal) * 0.5);
+    padding: calc(var(--vertical) * 0.012) calc(var(--horizontal) * 0.25);
     display: flex;
 }
 footer #socialNetworkServicesBar a {
-    width: var(--Horizontal);
+    width: var(--horizontal);
     text-align: center;
 }
 footer #socialNetworkServicesBar a img {
-    width: calc(var(--Horizontal) * 0.075);
+    width: calc(var(--horizontal) * 0.075);
     height: auto;
 }
 footer #copyright {
     text-align: center;
-    font-size: var(--FontSize);
-    font-family: var(--SourceCodePro);
+    font-size: var(--fontSize);
+    font-family: var(--sourceCodePro);
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--Color3);
+    color: var(--color3);
 }
 @media only screen and (max-width: 360px) {
-    header {
-        display: block;
-    }
-    header #companyName,
-    header nav {
-        width: var(--Horizontal);
-    }
-    header #companyName h1 {
-        font-size: calc(var(--FontSize) * 2.1);
-    }
-    header nav div a {
-        font-size: calc(var(--FontSize) * 0.957906);
-    }
-    main #companyProfile h1 {
-        font-size: calc(var(--FontSize) * 1.8);
-    }
-    main #companyProfile p {
-        font-size: calc(var(--FontSize) * 0.9);
-    }
-    footer #contactDetails #contactDetailsBar {
-        display: block;
-    }
-    footer #contactDetails #contactDetailsBar div {
-        width: var(--Horizontal);
-    }
-    footer #contactDetails #contactDetailsBar div h4 {
-        font-size: calc(var(--FontSize) * 1.06);
-    }
-    footer #contactDetails #contactDetailsBar div a {
-        font-size: calc(var(--FontSize) * 1.06);
-    }
 }
 @media only screen and (max-width: 640px) {
-    header {
-        display: block;
-    }
-    header #companyName,
-    header nav {
-        width: var(--Horizontal);
-    }
-    header #companyName h1 {
-        font-size: calc(var(--FontSize) * 3.15);
-    }
-    footer #contactDetails #contactDetailsBar {
-        display: block;
-    }
-    footer #contactDetails #contactDetailsBar div {
-        width: var(--Horizontal);
-    }
 }
