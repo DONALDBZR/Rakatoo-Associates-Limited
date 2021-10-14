@@ -52,6 +52,8 @@ class Main extends React.Component {
 class Footer extends React.Component {
     // Render method
     render() {
+        // Variables
+        let domain = "http://stormysystem.ddns.net/Rakatoo Associates Limited";
         return (
             <footer>
                 <div id="contactDetails">
@@ -84,7 +86,10 @@ class Footer extends React.Component {
                         href="https://www.facebook.com/pg/RakatooConsultingLtd"
                         target="_blank"
                     >
-                        <img src={"../Images/Facebook.png"} alt="Facebook" />
+                        <img
+                            src={domain + "/Images/Facebook.png"}
+                            alt="Facebook"
+                        />
                     </a>
                 </div>
                 <div id="copyright">Rakatoo Associates Ltd © 2021</div>
