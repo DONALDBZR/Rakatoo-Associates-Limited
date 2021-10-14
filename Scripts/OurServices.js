@@ -11,10 +11,10 @@ class Header extends React.Component {
                 </div>
                 <nav>
                     <div>
-                        <a href="./"> About Us </a>
+                        <a href="../AboutUs/"> About Us </a>
                     </div>
                     <div>
-                        <a href="../OurServices/"> Our Services </a>
+                        <a href="./"> Our Services </a>
                     </div>
                 </nav>
             </header>
