@@ -23,6 +23,8 @@ class Header extends React.Component {
 }
 // Main class
 class Main extends React.Component {
+    // Display method
+    display() {}
     // Render method
     render() {
         return <main></main>;

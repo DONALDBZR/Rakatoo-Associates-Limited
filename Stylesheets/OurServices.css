@@ -101,23 +101,52 @@ header nav div a:hover {
 main {
     width: var(--horizontal);
 }
-main #welcomeText {
+main h1 {
+    font-size: calc(var(--fontSize) * 2);
+    font-weight: bold;
+    font-family: var(--josefinSlab);
     text-align: center;
-}
-main #welcomeText h2 {
-    font-size: calc(var(--fontSize) * 1.75);
-    font-family: var(--josefinSlab);
-}
-main #welcomeText h1 {
-    font-size: calc(var(--fontSize) * 3.5);
-    font-weight: 700;
-    font-family: var(--josefinSlab);
     color: var(--color3);
 }
-main #animation img {
-    width: var(--horizontal);
-    height: auto;
+main #services #accounting h1,
+main #services #payrollManagement h1,
+main #services #taxation h1,
+main #services #feasibilityStudies h1,
+main #services #businessPlanning h1,
+main #services #advisory h1,
+main #services #consulting h1,
+main #services #businessDiagnosis h1 {
+    font-size: calc(var(--fontSize) * 1.1);
+    font-weight: bold;
+    font-family: var(--sourceCodePro);
     text-align: center;
+    color: var(--color3);
+    cursor: pointer;
+}
+main #services #accounting div,
+main #services #payrollManagement div,
+main #services #taxation div,
+main #services #feasibilityStudies div,
+main #services #businessPlanning div,
+main #services #advisory div,
+main #services #consulting div,
+main #services #businessDiagnosis div {
+    font-size: var(--fontSize);
+    font-weight: bold;
+    font-family: var(--sourceCodePro);
+    color: var(--color3);
+    padding: calc(var(--vertical) * 0) calc(var(--horizontal) * 0.01);
+    display: none;
+}
+main #services #accounting h1:hover + div,
+main #services #payrollManagement h1:hover + div,
+main #services #taxation h1:hover + div,
+main #services #feasibilityStudies h1:hover + div,
+main #services #businessPlanning h1:hover + div,
+main #services #advisory h1:hover + div,
+main #services #consulting h1:hover + div,
+main #services #businessDiagnosis h1:hover + div {
+    display: block;
 }
 footer #contactDetails {
     width: var(--horizontal);
@@ -180,8 +209,6 @@ footer #copyright {
     color: var(--color3);
 }
 @media only screen and (max-width: 360px) {
-    
 }
 @media only screen and (max-width: 640px) {
-    
 }
