@@ -218,6 +218,19 @@ footer #copyright {
     main h1 {
         font-size: calc(var(--fontSize) * 1.62);
     }
+    footer {
+        margin-top: calc(var(--vertical) * 0);
+    }
+    footer #contactDetails #contactDetailsBar {
+        display: block;
+    }
+    footer #contactDetails #contactDetailsBar div {
+        width: var(--horizontal);
+    }
+    footer #contactDetails #contactDetailsBar div h4,
+    footer #contactDetails #contactDetailsBar div a {
+        font-size: calc(var(--fontSize) * 0.9558);
+    }
 }
 @media only screen and (max-width: 640px) {
 }
