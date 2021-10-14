@@ -127,7 +127,6 @@ main #data #memberData #description {
     width: var(--horizontal);
     display: flex;
 }
-
 main #data #memberData #name h1,
 main #data #memberData #role h1,
 main #data #memberData #description h1 {
@@ -211,6 +210,19 @@ footer #copyright {
 @media only screen and (max-width: 360px) {
     header nav div a {
         font-size: calc(var(--fontSize) * 0.957906);
+    }
+    main #data #memberData #name h1,
+    main #data #memberData #role h1,
+    main #data #memberData #description h1 {
+        font-size: calc(var(--fontSize) * 0.69735688);
+    }
+    main #data #memberData #name #label,
+    main #data #memberData #role #label,
+    main #data #memberData #description #label,
+    main #data #memberData #name #person,
+    main #data #memberData #role #person,
+    main #data #memberData #description #person {
+        width: calc(var(--horizontal) / 2);
     }
 }
 @media only screen and (max-width: 640px) {
