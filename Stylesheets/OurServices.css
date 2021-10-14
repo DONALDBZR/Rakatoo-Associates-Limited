@@ -215,6 +215,9 @@ footer #copyright {
     header nav div a {
         font-size: calc(var(--fontSize) * 0.957906);
     }
+    main h1 {
+        font-size: calc(var(--fontSize) * 1.62);
+    }
 }
 @media only screen and (max-width: 640px) {
 }
