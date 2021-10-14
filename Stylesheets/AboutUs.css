@@ -211,6 +211,15 @@ footer #copyright {
     header nav div a {
         font-size: calc(var(--fontSize) * 0.957906);
     }
+    main #companyProfile h1 {
+        font-size: calc(var(--fontSize) * 1.8);
+    }
+    main #companyProfile div {
+        font-size: calc(var(--fontSize) * 0.9);
+    }
+    main #members #rakatoo a {
+        font-size: calc(var(--fontSize) * 1.3122);
+    }
 }
 @media only screen and (max-width: 640px) {
 }
