@@ -98,6 +98,55 @@ header nav div:hover {
 header nav div a:hover {
     color: var(--color2);
 }
+main {
+    width: var(--horizontal);
+}
+main #companyProfile h1 {
+    font-family: var(--josefinSlab);
+    font-size: calc(var(--fontSize) * 2);
+    text-align: center;
+    font-weight: bold;
+    color: var(--color3);
+}
+main #companyProfile img {
+    padding: calc(var(--vertical) * 0) calc(var(--horizontal) / 3);
+    width: calc(var(--horizontal) / 3);
+    height: auto;
+}
+main #companyProfile div {
+    font-family: var(--sourceCodePro);
+    font-weight: bold;
+    font-size: var(--fontSize);
+    color: var(--color3);
+    padding: calc(var(--vertical) * 0) calc(var(--horizontal) * 0.01);
+}
+main #members {
+    margin-top: calc(var(--vertical) * 0.01);
+    display: flex;
+    width: var(--horizontal);
+}
+main #members #rakatoo {
+    margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) / 3);
+    width: calc(var(--horizontal) / 3);
+    text-align: center;
+}
+main #members #rakatoo:hover {
+    background-color: var(--color6);
+}
+main #members #rakatoo img {
+    width: var(--horizontal);
+    height: auto;
+}
+main #members #rakatoo a {
+    color: var(--color3);
+    font-family: var(--josefinSlab);
+    font-weight: bold;
+    font-size: calc(var(--fontSize) * 2);
+    text-decoration: none;
+}
+main #members #rakatoo a:hover {
+    text-decoration: underline;
+}
 footer #contactDetails {
     width: var(--horizontal);
     background-color: var(--color6);
