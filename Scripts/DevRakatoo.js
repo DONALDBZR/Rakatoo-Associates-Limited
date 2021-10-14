@@ -8,7 +8,7 @@ class Header extends React.Component {
             <header>
                 <div id="companyLogo">
                     <a href={domain}>
-                        <img src="http://stormysystem.ddns.net/Rakatoo Associates Limited/Images/Logo.png" />
+                        <img src={domain + "/Images/Logo.png"} />
                     </a>
                 </div>
                 <nav>
@@ -84,7 +84,7 @@ class Footer extends React.Component {
                         href="https://www.facebook.com/pg/RakatooConsultingLtd"
                         target="_blank"
                     >
-                        <img src="../Images/Facebook.png" alt="Facebook" />
+                        <img src={"../Images/Facebook.png"} alt="Facebook" />
                     </a>
                 </div>
                 <div id="copyright">Rakatoo Associates Ltd © 2021</div>
