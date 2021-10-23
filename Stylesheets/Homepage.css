@@ -216,6 +216,35 @@ footer #copyright {
     footer #contactDetails #contactDetailsBar div a:hover {
         text-decoration: underline;
     }
+    footer #socialNetworkServicesBar a .faFacebook {
+        color: var(--color2);
+    }
 }
 @media only screen and (max-width: 640px) {
+    header #companyLogo img {
+        opacity: var(--opacity);
+    }
+    header nav div a {
+        color: var(--color2);
+    }
+    header nav div a:hover {
+        text-decoration: underline;
+    }
+    footer #contactDetails #contactDetailsBar {
+        display: block;
+    }
+    footer #contactDetails #contactDetailsBar div {
+        width: var(--horizontal);
+        display: flex;
+    }
+    footer #contactDetails #contactDetailsBar div h4,
+    footer #contactDetails #contactDetailsBar div a {
+        color: var(--color2);
+    }
+    footer #contactDetails #contactDetailsBar div a:hover {
+        text-decoration: underline;
+    }
+    footer #socialNetworkServicesBar a .faFacebook {
+        color: var(--color2);
+    }
 }
