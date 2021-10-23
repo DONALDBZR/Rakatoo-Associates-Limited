@@ -176,51 +176,6 @@ footer #copyright {
     color: var(--color2);
 }
 @media only screen and (max-width: 360px) {
-    header {
-        width: var(--horizontal);
-    }
-    header #companyLogo {
-        width: calc(var(--horizontal) / 3);
-    }
-    header #companyLogo img {
-        opacity: var(--opacity);
-    }
-    header nav {
-        width: calc(var(--horizontal) * (2 / 3));
-    }
-    header nav div {
-        width: calc(var(--horizontal) / 2);
-        text-align: center;
-    }
-    header nav div a {
-        font-size: calc(var(--fontSize) * 0.957906);
-    }
-    main #welcomeText h2 {
-        font-size: calc(var(--fontSize) * 1.148175);
-    }
-    main #welcomeText h1 {
-        font-size: calc(var(--fontSize) * 2.29635);
-    }
-    main #animation img {
-        width: var(--horizontal);
-        height: auto;
-    }
-    footer #contactDetails #contactDetailsBar {
-        display: block;
-    }
-    footer #contactDetails #contactDetailsBar div {
-        width: var(--horizontal);
-    }
-    footer #contactDetails #contactDetailsBar div h4,
-    footer #contactDetails #contactDetailsBar div a {
-        font-size: calc(var(--fontSize) * 0.9558);
-    }
 }
 @media only screen and (max-width: 640px) {
-    footer #contactDetails #contactDetailsBar {
-        display: block;
-    }
-    footer #contactDetails #contactDetailsBar div {
-        width: var(--horizontal);
-    }
 }

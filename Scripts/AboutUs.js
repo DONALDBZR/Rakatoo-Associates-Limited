@@ -82,7 +82,7 @@ class Footer extends React.Component {
                         href="https://www.facebook.com/pg/RakatooConsultingLtd"
                         target="_blank"
                     >
-                        <img src="../Images/Facebook.png" alt="Facebook" />
+                        <i class="fa fa-facebook faFacebook"></i>
                     </a>
                 </div>
                 <div id="copyright">Rakatoo Associates Ltd © 2021</div>
