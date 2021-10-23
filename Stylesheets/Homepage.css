@@ -176,6 +176,9 @@ footer #copyright {
     color: var(--color2);
 }
 @media only screen and (max-width: 360px) {
+    header #companyLogo img {
+        opacity: var(--opacity);
+    }
     header nav div a {
         color: var(--color2);
         font-size: calc(var(--fontSize) * 1.46 * 0.6561);
