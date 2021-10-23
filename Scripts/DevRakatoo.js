@@ -46,7 +46,7 @@ class Main extends React.Component {
                         </div>
                         <div id="role">
                             <h1 id="label">Role:</h1>
-                            <h1 id="person">Role</h1>
+                            <h1 id="person">Chief Executive Officer</h1>
                         </div>
                         <div id="description">
                             <h1 id="label">Description:</h1>
@@ -106,10 +106,7 @@ class Footer extends React.Component {
                         href="https://www.facebook.com/pg/RakatooConsultingLtd"
                         target="_blank"
                     >
-                        <img
-                            src={domain + "/Images/Facebook.png"}
-                            alt="Facebook"
-                        />
+                        <i class="fa fa-facebook faFacebook"></i>
                     </a>
                 </div>
                 <div id="copyright">Rakatoo Associates Ltd © 2021</div>
@@ -117,12 +114,12 @@ class Footer extends React.Component {
         );
     }
 }
-// Our Services class
-class OurServices extends React.Component {
+// Dev Rakatoo class
+class DevRakatoo extends React.Component {
     // Render method
     render() {
         return [<Header />, <Main />, <Footer />];
     }
 }
-// Rendering Our Services
-ReactDOM.render(<OurServices />, document.getElementById("app"));
+// Rendering Dev Rakatoo
+ReactDOM.render(<DevRakatoo />, document.getElementById("app"));

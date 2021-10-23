@@ -35,23 +35,20 @@
     /* Declaration of variables */
     --sourceCodePro: "Source Code Pro";
     --josefinSlab: "Josefin Slab";
-    --color1: rgb(8, 128, 1);
-    --color2: rgb(128, 128, 128);
-    --color3: rgb(255, 255, 255);
-    --color6: rgb(115, 115, 115);
+    --color1: rgb(128, 128, 128);
+    --color2: rgb(255, 255, 255);
+    --color3: rgba(255, 255, 255, 0.5);
+    --color4: rgb(115, 115, 115);
     --fontSize: 100%;
     --vertical: 100%;
     --horizontal: 100%;
     --opacity: 100%;
-    --width: 1366px;
     --height: 768px;
-    --color4: rgba(255, 255, 255, 0.35);
-    --color5: rgba(255, 255, 255, 0.7);
     /* HTML Styling configurations */
     font-family: sans-serif;
     font-size: var(--fontSize);
     margin: calc(var(--horizontal) * 0);
-    background-color: var(--color2);
+    background-color: var(--color1);
 }
 body {
     margin: calc(var(--horizontal) * 0);
@@ -59,7 +56,7 @@ body {
 header {
     width: var(--horizontal);
     display: flex;
-    background-color: var(--color6);
+    background-color: var(--color4);
 }
 header #companyLogo,
 header nav {
@@ -92,9 +89,6 @@ header nav div a {
     font-family: var(--sourceCodePro);
     font-weight: bold;
 }
-header nav div:hover {
-    background-color: var(--color1);
-}
 header nav div a:hover {
     color: var(--color2);
 }
@@ -106,15 +100,17 @@ main h1 {
     font-size: calc(var(--fontSize) * 2);
     font-weight: bold;
     text-align: center;
-    color: var(--color3);
+    color: var(--color2);
 }
 main #data {
     width: var(--horizontal);
     display: flex;
 }
-main #data #profilePicture,
+main #data #profilePicture {
+    width: calc(var(--horizontal) / 2 * 0.43046721);
+}
 main #data #memberData {
-    width: calc(var(--horizontal) / 2);
+    width: calc(var(--horizontal) / 2 * 2.14358881);
 }
 main #data #profilePicture img {
     width: calc(var(--horizontal) / 3);
@@ -130,8 +126,8 @@ main #data #memberData #description {
 main #data #memberData #name h1,
 main #data #memberData #role h1,
 main #data #memberData #description h1 {
-    font-size: calc(var(--fontSize) * 1.8);
-    color: var(--color3);
+    font-size: calc(var(--fontSize) * 1.62);
+    color: var(--color2);
     font-weight: bold;
     text-align: left;
 }
@@ -139,23 +135,26 @@ main #data #memberData #name #label,
 main #data #memberData #role #label,
 main #data #memberData #description #label {
     font-family: var(--sourceCodePro);
-    width: calc(var(--horizontal) * 0.31);
+    width: calc(var(--horizontal) / 2 * 0.43046721);
 }
 main #data #memberData #name #person,
 main #data #memberData #role #person,
 main #data #memberData #description #person {
     font-family: var(--josefinSlab);
-    width: calc(var(--horizontal) * 0.69);
+    width: calc(var(--horizontal) / 2 * 2.14358881);
+}
+footer {
+    margin-top: calc(var(--vertical) * 0.03);
 }
 footer #contactDetails {
     width: var(--horizontal);
-    background-color: var(--color6);
+    background-color: var(--color4);
 }
 footer #contactDetails h1 {
     font-size: calc(var(--fontSize) * 2);
     text-align: center;
     font-family: var(--sourceCodePro);
-    color: var(--color3);
+    color: var(--color2);
     margin: calc(var(--vertical) * 0);
 }
 footer #contactDetails #contactDetailsBar {
@@ -171,7 +170,7 @@ footer #contactDetails #contactDetailsBar div h4 {
     margin: 0;
     font-family: var(--sourceCodePro);
     font-size: calc(var(--fontSize) * 1.18);
-    color: var(--color3);
+    color: var(--color2);
 }
 footer #contactDetails #contactDetailsBar div a {
     font-family: var(--sourceCodePro);
@@ -181,23 +180,21 @@ footer #contactDetails #contactDetailsBar div a {
 }
 footer #contactDetails #contactDetailsBar div a:hover {
     color: var(--color2);
-    text-shadow: none;
-}
-footer #contactDetails #contactDetailsBar div:hover {
-    background-color: var(--color1);
 }
 footer #socialNetworkServicesBar {
-    width: calc(var(--horizontal) * 0.5);
-    padding: calc(var(--vertical) * 0.012) calc(var(--horizontal) * 0.25);
+    width: var(--horizontal);
+    justify-content: center;
     display: flex;
 }
 footer #socialNetworkServicesBar a {
-    width: var(--horizontal);
-    text-align: center;
+    font-size: calc(var(--fontSize) * 2);
+    margin: calc(var(--vertical) * 0.0025) calc(var(--horizontal) * 0);
 }
-footer #socialNetworkServicesBar a img {
-    width: calc(var(--horizontal) * 0.075);
-    height: auto;
+footer #socialNetworkServicesBar a .faFacebook {
+    color: var(--color3);
+}
+footer #socialNetworkServicesBar a .faFacebook:hover {
+    color: var(--color2);
 }
 footer #copyright {
     text-align: center;
@@ -205,58 +202,9 @@ footer #copyright {
     font-family: var(--sourceCodePro);
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--color3);
+    color: var(--color2);
 }
 @media only screen and (max-width: 360px) {
-    header nav div a {
-        font-size: calc(var(--fontSize) * 0.957906);
-    }
-    main #data #memberData #name h1,
-    main #data #memberData #role h1,
-    main #data #memberData #description h1 {
-        font-size: calc(var(--fontSize) * 0.69735688);
-    }
-    main #data #memberData #name #label,
-    main #data #memberData #role #label,
-    main #data #memberData #description #label,
-    main #data #memberData #name #person,
-    main #data #memberData #role #person,
-    main #data #memberData #description #person {
-        width: calc(var(--horizontal) / 2);
-    }
-    footer #contactDetails #contactDetailsBar {
-        display: block;
-    }
-    footer #contactDetails #contactDetailsBar div {
-        width: var(--horizontal);
-    }
-    footer #contactDetails #contactDetailsBar div h4,
-    footer #contactDetails #contactDetailsBar div a {
-        font-size: calc(var(--fontSize) * 0.9558);
-    }
 }
 @media only screen and (max-width: 640px) {
-    main #data #memberData #name h1,
-    main #data #memberData #role h1,
-    main #data #memberData #description h1 {
-        font-size: calc(var(--fontSize) * 1.062882);
-    }
-    main #data #memberData #name #label,
-    main #data #memberData #role #label,
-    main #data #memberData #description #label,
-    main #data #memberData #name #person,
-    main #data #memberData #role #person,
-    main #data #memberData #description #person {
-        width: calc(var(--horizontal) / 2);
-    }
-    footer #contactDetails #contactDetailsBar {
-        display: block;
-    }
-    footer #contactDetails #contactDetailsBar div {
-        width: var(--horizontal);
-    }
-    footer #contactDetails #contactDetailsBar div h4,
-    footer #contactDetails #contactDetailsBar div a {
-        font-size: calc(var(--fontSize) * 1.18);
-    }
 }
