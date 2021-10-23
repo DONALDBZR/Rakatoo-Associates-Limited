@@ -176,6 +176,43 @@ footer #copyright {
     color: var(--color2);
 }
 @media only screen and (max-width: 360px) {
+    header nav div a {
+        color: var(--color2);
+        font-size: calc(var(--fontSize) * 1.46 * 0.6561);
+    }
+    header nav div a:hover {
+        text-decoration: underline;
+    }
+    main #welcomeText h2 {
+        margin: calc(var(--vertical) * 0.005) calc(var(--horizontal) * 0);
+    }
+    main #welcomeText h1 {
+        font-size: calc(var(--fontSize) * 3.5 * 0.6561);
+        margin: calc(var(--vertical) * 0.005) calc(var(--horizontal) * 0);
+    }
+    main #animation img {
+        margin: calc(var(--vertical) * 0);
+        width: calc(var(--horizontal) * 1);
+        height: auto;
+    }
+    footer {
+        margin-top: calc(var(--vertical) * 0.4);
+    }
+    footer #contactDetails #contactDetailsBar {
+        display: block;
+    }
+    footer #contactDetails #contactDetailsBar div {
+        width: var(--horizontal);
+        display: flex;
+    }
+    footer #contactDetails #contactDetailsBar div h4,
+    footer #contactDetails #contactDetailsBar div a {
+        font-size: calc(var(--fontSize) * 1.18 * 0.81);
+        color: var(--color2);
+    }
+    footer #contactDetails #contactDetailsBar div a:hover {
+        text-decoration: underline;
+    }
 }
 @media only screen and (max-width: 640px) {
 }
