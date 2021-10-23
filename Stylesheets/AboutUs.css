@@ -202,6 +202,46 @@ footer #copyright {
     color: var(--color2);
 }
 @media only screen and (max-width: 360px) {
+    header #companyLogo img {
+        opacity: var(--opacity);
+    }
+    header nav div a {
+        color: var(--color2);
+        font-size: calc(var(--fontSize) * 1.46 * 0.6561);
+    }
+    header nav div a:hover {
+        text-decoration: underline;
+    }
+    main #companyProfile h1 {
+        font-size: calc(var(--fontSize) * 2 * 0.9);
+    }
+    main #members #rakatoo img {
+        width: var(--horizontal);
+        margin: calc(var(--vertical) * 0);
+    }
+    main #members #rakatoo a {
+        font-size: calc(var(--fontSize) * 2 * 0.6561);
+    }
+    footer {
+        margin-top: calc(var(--vertical) * 0.12);
+    }
+    footer #contactDetails #contactDetailsBar {
+        display: block;
+    }
+    footer #contactDetails #contactDetailsBar div {
+        width: var(--horizontal);
+    }
+    footer #contactDetails #contactDetailsBar div h4,
+    footer #contactDetails #contactDetailsBar div a {
+        font-size: calc(var(--fontSize) * 1.18 * 0.81);
+        color: var(--color2);
+    }
+    footer #contactDetails #contactDetailsBar div a:hover {
+        text-decoration: underline;
+    }
+    footer #socialNetworkServicesBar a .faFacebook {
+        color: var(--color2);
+    }
 }
 @media only screen and (max-width: 640px) {
 }
