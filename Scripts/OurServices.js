@@ -1,5 +1,12 @@
+// Our Services class
+class OurServices extends React.Component {
+    // Render method
+    render() {
+        return [<Header />, <Main />, <Footer />];
+    }
+}
 // Header class
-class Header extends React.Component {
+class Header extends OurServices {
     // Render method
     render() {
         return (
@@ -22,7 +29,7 @@ class Header extends React.Component {
     }
 }
 // Main class
-class Main extends React.Component {
+class Main extends OurServices {
     // Render method
     render() {
         return (
@@ -104,7 +111,7 @@ class Main extends React.Component {
     }
 }
 // Footer class
-class Footer extends React.Component {
+class Footer extends OurServices {
     // Render method
     render() {
         return (
@@ -145,13 +152,6 @@ class Footer extends React.Component {
                 <div id="copyright">Rakatoo Associates Ltd © 2021</div>
             </footer>
         );
-    }
-}
-// Our Services class
-class OurServices extends React.Component {
-    // Render method
-    render() {
-        return [<Header />, <Main />, <Footer />];
     }
 }
 // Rendering Our Services

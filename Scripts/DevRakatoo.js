@@ -1,5 +1,12 @@
+// Dev Rakatoo class
+class DevRakatoo extends React.Component {
+    // Render method
+    render() {
+        return [<Header />, <Main />, <Footer />];
+    }
+}
 // Header class
-class Header extends React.Component {
+class Header extends DevRakatoo {
     // Render method
     render() {
         // Variables
@@ -24,7 +31,7 @@ class Header extends React.Component {
     }
 }
 // Main class
-class Main extends React.Component {
+class Main extends DevRakatoo {
     // Render method
     render() {
         // Variables
@@ -69,7 +76,7 @@ class Main extends React.Component {
     }
 }
 // Footer class
-class Footer extends React.Component {
+class Footer extends DevRakatoo {
     // Render method
     render() {
         // Variables
@@ -112,13 +119,6 @@ class Footer extends React.Component {
                 <div id="copyright">Rakatoo Associates Ltd © 2021</div>
             </footer>
         );
-    }
-}
-// Dev Rakatoo class
-class DevRakatoo extends React.Component {
-    // Render method
-    render() {
-        return [<Header />, <Main />, <Footer />];
     }
 }
 // Rendering Dev Rakatoo

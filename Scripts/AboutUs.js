@@ -1,5 +1,12 @@
+// About Us class
+class AboutUs extends React.Component {
+    // Render method
+    render() {
+        return [<Header />, <Main />, <Footer />];
+    }
+}
 // Header class
-class Header extends React.Component {
+class Header extends AboutUs {
     // Render method
     render() {
         return (
@@ -22,7 +29,7 @@ class Header extends React.Component {
     }
 }
 // Main class
-class Main extends React.Component {
+class Main extends AboutUs {
     // Render method
     render() {
         return (
@@ -47,7 +54,7 @@ class Main extends React.Component {
     }
 }
 // Footer class
-class Footer extends React.Component {
+class Footer extends AboutUs {
     // Render method
     render() {
         return (
@@ -90,12 +97,5 @@ class Footer extends React.Component {
         );
     }
 }
-// Our Services class
-class OurServices extends React.Component {
-    // Render method
-    render() {
-        return [<Header />, <Main />, <Footer />];
-    }
-}
-// Rendering Our Services
-ReactDOM.render(<OurServices />, document.getElementById("app"));
+// Rendering About Us
+ReactDOM.render(<AboutUs />, document.getElementById("app"));
