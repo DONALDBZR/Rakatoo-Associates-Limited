@@ -35,7 +35,6 @@
     /* Declaration of variables */
     --sourceCodePro: "Source Code Pro";
     --josefinSlab: "Josefin Slab";
-    --color1: rgb(8, 128, 1);
     --color2: rgb(128, 128, 128);
     --color3: rgb(255, 255, 255);
     --color4: rgb(115, 115, 115);
@@ -88,9 +87,6 @@ header nav div a {
     font-size: calc(var(--fontSize) * 1.46);
     font-family: var(--sourceCodePro);
     font-weight: bold;
-}
-header nav div:hover {
-    background-color: var(--color1);
 }
 header nav div a:hover {
     color: var(--color2);
@@ -151,9 +147,6 @@ footer #contactDetails #contactDetailsBar div a {
 footer #contactDetails #contactDetailsBar div a:hover {
     color: var(--color2);
     text-shadow: none;
-}
-footer #contactDetails #contactDetailsBar div:hover {
-    background-color: var(--color1);
 }
 footer #socialNetworkServicesBar {
     width: calc(var(--horizontal) * 0.5);
